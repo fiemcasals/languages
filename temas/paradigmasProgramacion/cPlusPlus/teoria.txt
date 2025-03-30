@@ -1,0 +1,1 @@
+C++ es un lenguaje multiparadigma, lo que significa que abarca varios paradigmas de programación, como imperativo, estructurado, funcional, orientado a objetos y, en medida menor, lógico.

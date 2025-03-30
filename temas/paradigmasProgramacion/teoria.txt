@@ -1,0 +1,29 @@
+Paradigmas de Programación
+
+1. Paradigma Imperativo
+
+El paradigma imperativo se basa en la ejecución secuencial de instrucciones que modifican el estado del programa. Se centra en el "cómo" hacer las cosas.
+
+
+
+2. Paradigma Estructurado
+
+El paradigma estructurado se basa en el uso de estructuras de control como secuencia, selección e iteración, promoviendo un código más legible y mantenible.
+
+
+
+3. Paradigma Funcional
+
+En el paradigma funcional, la computación se basa en la evaluación de funciones puras, evitando estados mutables y efectos secundarios.
+
+
+
+4. Paradigma Lógico
+
+El paradigma lógico se basa en reglas lógicas y hechos. Se utiliza en inteligencia artificial y procesamiento de lenguaje natural.
+
+
+
+5. Paradigma Orientado a Objetos
+
+Este paradigma organiza el código en "objetos" que encapsulan datos y comportamientos. Promueve la reutilización y modularidad.
