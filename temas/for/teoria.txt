@@ -1,0 +1,110 @@
+
+Estructura 'for' y uso de 'enumerate':
+
+Uso del bucle 'for'  
+El bucle 'for' en Python se usa para recorrer estructuras iterables como listas, tuplas y diccionarios.  
+
+Ejemplo básico con una lista:  
+
+ciudades = ['Buenos Aires', 'Río de Janeiro', 'Denver']
+
+for ciudad in ciudades:
+    print(ciudad)
+
+Este código recorre la lista `ciudades` e imprime cada elemento.  
+
+
+Uso de 'enumerate' 
+La función 'enumerate()' permite recorrer una secuencia y obtener un índice junto con el valor, evitando llevar un contador manual.  
+
+Ejemplo:  
+for indice, ciudad in enumerate(ciudades):
+    print(indice, ' - ' + ciudad)
+
+Salida:
+0 - Buenos Aires  
+1 - Río de Janeiro  
+2 - Denver  
+Aquí, 'enumerate()' genera pares '(índice, valor)', lo que facilita el manejo de listas indexadas.  
+
+
+Opciones avanzadas con 'enumerate'  
+Por defecto, 'enumerate' empieza la numeración en '0', pero puedes cambiar esto:  
+
+for indice, ciudad in enumerate(ciudades, start=1):
+    print(indice, ' - ' + ciudad)
+
+Salida:
+
+1 - Buenos Aires  
+2 - Río de Janeiro  
+3 - Denver  
+
+Esto es útil si quieres numerar desde '1' en lugar de '0'.  
+
+
+Recorrer diccionarios con 'for'
+El bucle 'for' también puede usarse para recorrer diccionarios, iterando sobre sus claves o sobre pares clave-valor.  
+
+Ejemplo con claves:  
+
+paises = {
+    'AR': 'Argentina',
+    'BR': 'Brasil',
+    'EU': 'Estados Unidos'
+}
+
+for pais in paises:
+    print(pais)
+
+Salida:
+
+AR  
+BR  
+EU  
+
+Si queremos obtener tanto la clave como el valor, usamos '.items()':  
+
+for codigo, nombre in paises.items():
+    print(codigo, ' -> ', nombre)
+
+Salida:
+
+AR -> Argentina  
+BR -> Brasil  
+EU -> Estados Unidos  
+
+
+
+Código Práctico con 'for' y 'enumerate' 
+
+Lista de ciudades
+ciudades = ['Buenos Aires', 'Río de Janeiro', 'Denver']
+
+print("Recorriendo una lista con for:")
+for ciudad in ciudades:
+    print(ciudad)
+
+print("\nUsando enumerate para obtener el índice:")
+for indice, ciudad in enumerate(ciudades):
+    print(indice, ' - ' + ciudad)
+
+print("\nUsando enumerate con un índice personalizado:")
+for indice, ciudad in enumerate(ciudades, start=100):
+    print(indice, ' - ' + ciudad)
+
+Diccionario de países
+paises = {
+    'AR': 'Argentina',
+    'BR': 'Brasil',
+    'EU': 'Estados Unidos'
+}
+
+print("\nRecorriendo un diccionario (solo claves):")
+for pais in paises:
+    print(pais)
+
+print("\nRecorriendo un diccionario con claves y valores:")
+for codigo, nombre in paises.items():
+    print(codigo, ' -> ', nombre)
+

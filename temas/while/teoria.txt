@@ -1,0 +1,33 @@
+Teoría sobre Estructuras de Iteración - 'while'
+
+¿Qué es el bucle 'while'? 
+En Python, el bucle 'while' se usa para ejecutar un bloque de código mientras una condición sea verdadera. La sintaxis básica es:
+
+
+while condición:
+    # Bloque de código
+
+
+- Condición: Es una expresión booleana que se evalúa antes de cada iteración. Si es 'True', el ciclo sigue ejecutándose. Si es 'False', el ciclo termina.
+  
+- Importante: Si la condición nunca llega a ser 'False', el bucle 'while' entrará en un bucle infinito, lo que puede hacer que tu programa se quede atascado.
+
+Sintaxis  
+
+while condición:
+    # Bloque de código que se ejecuta mientras la condición sea True
+
+
+- En cada iteración del ciclo, la condición se evalúa nuevamente. Si es 'True', el código dentro del ciclo 'while' se ejecuta. Una vez que la condición se vuelve 'False', el ciclo termina y el programa continúa con el código después del ciclo.
+
+Aplicación de 'while'  
+El bucle 'while' es útil cuando no sabemos de antemano cuántas veces se debe ejecutar el ciclo, pero sí sabemos la condición que debe cumplirse para detener la iteración.
+
+Ejemplo: Convertir un número decimal a binario
+En el ejemplo, './ejemplo.py usamos un ciclo 'while' para convertir un número decimal a su representación binaria.
+
+
+Resumen de Uso de 'while' 
+- Usos comunes: Es útil cuando no sabemos cuántas veces necesitamos ejecutar una acción. Ejemplos comunes son recorrer estructuras dinámicas, leer archivos hasta el final, esperar que el usuario ingrese datos válidos, entre otros.
+- Precauciones: Debemos tener cuidado de que el ciclo tenga una condición de salida clara para evitar bucles infinitos.
+

@@ -1,0 +1,48 @@
+Estructuras de Control: if / elif / else
+
+En Python, las estructuras de control permiten la toma de decisiones en el flujo de un programa. La estructura `if/elif/else` se usa para ejecutar diferentes bloques de código según ciertas condiciones.
+
+1. 'if' (si): Evalúa una condición. Si es verdadera, ejecuta el bloque de código correspondiente.
+2. 'elif' (sino si): Permite evaluar múltiples condiciones alternativas. Se ejecuta solo si la condición anterior fue falsa y la suya es verdadera.
+3. else (sino): Se ejecuta si ninguna de las condiciones anteriores fue verdadera.
+
+Importancia de la Indentación
+Python usa la indentación para definir los bloques de código. Se recomienda usar 4 espacios para cada nivel de indentación. Un error en la indentación generará un IndentationError.
+
+Ejemplo de Uso
+Una aplicación común es la determinación de impuestos basada en los ingresos. Según el valor ingresado, el programa asigna un coeficiente y calcula el impuesto correspondiente.
+
+Consideraciones
+- Se pueden anidar múltiples 'elif' para cubrir más condiciones.
+- Si se omite `else`, el programa simplemente no ejecuta ninguna acción si ninguna de las condiciones 'if' o 'elif' es verdadera.
+
+Las estructuras de control son esenciales para la lógica de cualquier programa y permiten construir flujos de decisión más complejos al combinarse con otras estructuras, como bucles ('for', 'while').(ver while en la carpeta whileDoWhile)
+
+
+📌 Mas Teoría: Operador Ternario en Python
+
+El operador ternario en Python permite escribir condiciones en una sola línea, haciendo el código más compacto y legible.
+
+Sintaxis básica
+
+valor_si_verdadero if condicion else valor_si_falso
+
+    Si la condición es True, se ejecuta valor_si_verdadero.
+
+    Si la condición es False, se ejecuta valor_si_falso.
+
+Ventajas
+
+✅ Código más corto y fácil de leer.
+✅ Útil para asignaciones rápidas.
+Otra Notación en Python
+
+Python permite usar una tupla para lograr un efecto similar:
+
+(valor_falso, valor_verdadero) [condicion]
+
+    Si la condición es True (1), devuelve valor_verdadero (índice 1).
+
+    Si la condición es False (0), devuelve valor_falso (índice 0).
+
+Sin embargo, esta notación es menos común y menos legible que la forma estándar del operador ternario.

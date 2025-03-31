@@ -1,0 +1,77 @@
+Slicing en Python
+
+Slicing es una técnica en Python que permite extraer partes de una secuencia, como listas, tuplas o cadenas de texto (strings).
+
+Sintaxis básica:
+
+secuencia[inicio:fin:paso]
+
+- Inicio: Índice desde donde comienza la selección (incluido).
+- Fin: Índice hasta donde termina la selección (excluido).
+- Paso: Determina cada cuántos elementos tomar.
+
+Ejemplos básicos:
+
+texto = "Hola mundo"
+print(texto[0:4])  # 'Hola'
+print(texto[:4])   # 'Hola' (inicio por defecto es 0)
+print(texto[5:])   # 'mundo' (hasta el final)
+print(texto[:])    # 'Hola mundo' (copia total)
+print(texto[::-1]) # 'odnum aloH' (inversión del string)
+print(texto[::-2]) # 'onmao' (inversión del string y tomo de a dos)
+
+
+Slicing en listas:
+
+numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(numeros[2:6])  # [2, 3, 4, 5]
+print(numeros[:5])   # [0, 1, 2, 3, 4]
+print(numeros[5:])   # [5, 6, 7, 8, 9]
+print(numeros[::2])  # [0, 2, 4, 6, 8] (cada 2 elementos)
+print(numeros[::-1]) # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] (inversión)
+print(numeros[::-2]) # [10, 8, 6, 4, 2]
+
+
+Notas importantes:
+- Si 'inicio' no se indica, por defecto es '0'.
+- Si 'fin' no se indica, se asume el final de la secuencia.
+- Si 'paso' no se indica, se asume '1'.
+- Un 'paso' negativo recorre la secuencia en orden inverso.
+
+Utilidad del slicing:
+- Extraer fragmentos de texto.
+- Copiar listas sin modificar la original.
+- Invertir secuencias fácilmente.
+- Acceder a elementos con un patrón definido.
+
+Aclaracion:
+
+En Python, el operador de asignación (=) no copia listas ni otras colecciones mutables, sino que crea una referencia a la misma lista en memoria. Esto significa que modificar la nueva variable también afectará a la original.  
+
+Ejemplo de problema con asignación ('='):  
+
+lista_original = [1, 2, 3, 4]
+lista_copiada = lista_original  # No se copia, solo se referencia
+
+lista_copiada[0] = 99  # Cambiamos el primer elemento
+
+print(lista_original)  # [99, 2, 3, 4]  (También cambia)
+print(lista_copiada)   # [99, 2, 3, 4]
+  
+Para copiar correctamente una lista sin modificar la original, puedes usar slicing ('[:]') o el método '.copy()':  
+
+lista_original = [1, 2, 3, 4]
+lista_copiada = lista_original[:]  # Copia con slicing
+
+lista_copiada[0] = 99  # Solo cambia la copia
+
+print(lista_original)  # [1, 2, 3, 4]  (Se mantiene igual)
+print(lista_copiada)   # [99, 2, 3, 4]  (Solo cambia la copia)
+
+Otra opción es 'copy()':  
+
+lista_copiada = lista_original.copy()
+
+Para copiar listas anidadas (listas dentro de listas), usa 'copy.deepcopy()'.
+
+
