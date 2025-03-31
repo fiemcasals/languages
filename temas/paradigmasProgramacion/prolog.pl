@@ -14,4 +14,4 @@ progenitor(X, Y) :- madre(X, Y).    % Si X es madre de Y, X es progenitor de Y.
 hermanos(X, Y) :- padre(P, X), padre(P, Y), madre(M, X), madre(M, Y), X \= Y.
 
 
-%puedes ejecutar el codigo -> "?- progenitor(juan, X)." -> pregunta si juan es progenitos de alguien(x)
+%puedes ejecutar el codigo -> "?- progenitor(juan, X)." -> pregunta si juan es progenitos de alguien

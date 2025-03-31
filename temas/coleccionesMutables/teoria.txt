@@ -1,0 +1,60 @@
+Definición de Colección Mutable en python
+
+En Python, una colección mutable es una estructura de datos que permite modificar su contenido después de su creación. Esto significa que se pueden agregar, eliminar o cambiar elementos dentro de la colección sin necesidad de crear una nueva instancia.  
+
+Ejemplos de Colecciones Mutables en Python
+Algunas de las colecciones mutables más comunes en Python incluyen:  
+- Listas (`list`): Permiten agregar, eliminar y modificar elementos.  
+- Conjuntos (`set`): Almacenan elementos únicos y permiten operaciones como unión y diferencia.  
+- Diccionarios (`dict`): Almacenan pares clave-valor y permiten modificar sus valores.  
+- Arreglos de bytes (`bytearray`): Son versiones mutables de los objetos `bytes`, útiles para manipulación de datos binarios.  
+
+
+
+
+Sobrecarga de Operadores en Python  
+
+¿Qué es la Sobrecarga de Operadores?
+La sobrecarga de operadores en Python permite redefinir el comportamiento de los operadores (`+`, `-`, `*`, etc.) para que funcionen con objetos de clases personalizadas. Esto se logra mediante la implementación de métodos especiales en una clase, conocidos como métodos mágicos o dunder methods (porque comienzan y terminan con `__`).
+
+Por ejemplo, el operador `+` normalmente suma números, pero si sobrecargamos su método en una clase personalizada, podemos hacer que funcione con objetos de esa clase.
+
+
+
+Métodos Especiales para la Sobrecarga
+A continuación, se muestran algunos operadores y sus métodos correspondientes en Python:
+
+| Operador | Método Mágico              | Ejemplo         |
+|----------|----------------------------|----------------|
+| `+`      | `__add__(self, other)`     | `a + b`        |
+| `-`      | `__sub__(self, other)`     | `a - b`        |
+| `*`      | `__mul__(self, other)`     | `a * b`        |
+| `/`      | `__truediv__(self, other)` | `a / b`        |
+| `//`     | `__floordiv__(self, other)`| `a // b`       |
+| `%`      | `__mod__(self, other)`     | `a % b`        |
+| `**`     | `__pow__(self, other)`     | `a ** b`       |
+| `@`      | `__matmul__(self, other)`  | `a @ b`        |
+| `==`     | `__eq__(self, other)`      | `a == b`       |
+| `!=`     | `__ne__(self, other)`      | `a != b`       |
+| `<`      | `__lt__(self, other)`      | `a < b`        |
+| `<=`     | `__le__(self, other)`      | `a <= b`       |
+| `>`      | `__gt__(self, other)`      | `a > b`        |
+| `>=`     | `__ge__(self, other)`      | `a >= b`       |
+| `&`      | `__and__(self, other)`     | `a & b`        |
+| `|`      | `__or__(self, other)`      | `a | b`        |
+| `^`      | `__xor__(self, other)`     | `a ^ b`        |
+| `<<`     | `__lshift__(self, other)`  | `a << b`       |
+| `>>`     | `__rshift__(self, other)`  | `a >> b`       |
+
+Estos métodos permiten definir cómo deben comportarse los objetos de una clase cuando se usan con estos operadores.
+
+
+
+
+Beneficios de la Sobrecarga de Operadores
+✅ Permite que los objetos de una clase se comporten de manera intuitiva con operadores estándar.  
+✅ Hace que el código sea más legible y fácil de entender.  
+✅ Facilita la manipulación de estructuras de datos personalizadas como matrices, vectores o números complejos.  
+
+Conclusión
+La sobrecarga de operadores es una técnica poderosa en Python que permite personalizar el comportamiento de operadores estándar en clases personalizadas. A través de "métodos mágicos", podemos definir operaciones matemáticas y lógicas para nuestros objetos, mejorando la flexibilidad y legibilidad del código.
