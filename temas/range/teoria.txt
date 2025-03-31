@@ -1,0 +1,120 @@
+
+
+Teoría sobre range en Python
+
+El range es una función en Python que se utiliza para generar secuencias de números. Es muy útil cuando se necesita iterar sobre un conjunto de números o crear una secuencia de elementos de manera eficiente.
+
+Conceptos básicos de range:
+
+- Inicio: El primer valor de la secuencia (incluido).
+- Fin: El valor hasta donde llega la secuencia (pero no incluido).
+- Paso: El incremento entre cada número de la secuencia.
+
+Sintaxis de range:
+
+range(inicio, fin, paso)
+
+- inicio: El valor donde comienza la secuencia (por defecto es 0).
+- fin: El valor donde termina la secuencia (pero no se incluye).
+- paso: El incremento entre los valores (por defecto es 1).
+
+Ejemplos:
+
+1. Ejemplo básico con un solo parámetro (fin):
+   
+   Crea una secuencia de números desde 0 hasta 9 (sin incluir 10).
+   
+   
+   for i in range(10):
+       print(i)
+   
+   Salida:
+   
+   0
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   
+
+2. Ejemplo con inicio y fin:
+   
+   Crea una secuencia de números desde 5 hasta 9 (sin incluir 10).
+   
+   
+   for i in range(5, 10):
+       print(i)
+   
+   Salida:
+   
+   5
+   6
+   7
+   8
+   9
+   
+
+3. Ejemplo con inicio, fin y paso:
+   
+   Crea una secuencia de números desde 0 hasta 9 (sin incluir 10), pero con un incremento de 2.
+   
+   
+   for i in range(0, 10, 2):
+       print(i)
+   
+   Salida:
+   
+   0
+   2
+   4
+   6
+   8
+   
+
+4. Ejemplo con números negativos:
+
+   Puedes crear secuencias con números negativos o de decrecimiento. Por ejemplo, para contar hacia atrás:
+   
+   
+   for i in range(10, 0, -1):
+       print(i)
+   
+   Salida:
+   
+   10
+   9
+   8
+   7
+   6
+   5
+   4
+   3
+   2
+   1
+   
+
+Convertir un range en una lista:
+
+Si deseas ver la secuencia generada por range como una lista, puedes convertirla utilizando la función 
+
+rango = range(1, 10, 2)
+lista = list(rango)
+print(lista)
+
+
+Salida:
+
+[1, 3, 5, 7, 9]
+
+
+Conclusión
+
+- 'range' es una herramienta muy útil para generar secuencias de números en Python de forma eficiente.
+- Se puede usar en bucles 'for' para iterar de manera sencilla sobre números, y su uso es común en operaciones como generación de índices o selección de elementos dentro de un rango determinado.
+- Con sus parámetros, 'range' te permite configurar el inicio, fin y el paso de la secuencia.
+
