@@ -1,0 +1,12 @@
+1. Programar un script de Python que contenga en una variable un string con un numero n y al
+ejecutarlo imprima por pantalla el resultado de n + nn + nnn. Ejemplo: n = “5” => imprime
+5+55+555
+
+2. Se necesita contar los espacios que existe en un texto almacenado en una variables. Realizarlo de
+forma iterativa y luego utilizando las funciones de str que nos ofrece Python (split). Ejemplo:
+texto = "hola es un texto” debe imprimir que contiene 3 espacios.
+
+3. Para normalizar el input de un sistema se necesita convertir la entrada de datos. El origen es una
+lista conteniendo información sobre modelos de celulares y se debe armar un diccionario con las
+claves “marca”, “modelo” y ”precio”.
+Ejemplo de entrada: [”One Hyper”, “Motorola”, 14.35]
