@@ -1,0 +1,71 @@
+Teoría: Alteración en el flujo
+
+En programación, la alteración en el flujo se refiere a técnicas que modifican la ejecución normal de un programa. Esto incluye estructuras como break, continue, return y funciones como filter(), map() y lambda.
+
+1. Uso de break y continue
+
+    break: Detiene la ejecución de un bucle antes de que termine.
+
+    continue: Salta la iteración actual y pasa a la siguiente.
+
+for i in range(10):
+    if i == 5:
+        break  # Se detiene cuando i es 5
+    print(i)
+
+Salida:
+
+0  
+1  
+2  
+3  
+4  
+
+for i in range(10):
+    if i == 5:
+        continue  # Salta la iteración cuando i es 5
+    print(i)
+
+Salida:
+
+0  
+1  
+2  
+3  
+4  
+6  
+7  
+8  
+9  
+
+2. Función filter()
+
+La función filter() se usa para filtrar elementos de una secuencia según una condición.
+Sintaxis:
+
+filter(funcion, iterable)
+
+    La función devuelve True para los elementos que se mantienen.
+
+    El iterable es la lista, tupla o rango sobre la que se filtra.
+
+Ejemplo de filter() con números pares:
+
+pares = list(filter(lambda x: x % 2 == 0, range(10)))
+print(pares)
+
+Salida:
+
+[0, 2, 4, 6, 8]
+
+3. Función map()
+
+Aplica una función a cada elemento de un iterable y devuelve una nueva lista.
+
+cuadrados = list(map(lambda x: x ** 2, range(5)))
+print(cuadrados)
+
+Salida:
+
+[0, 1, 4, 9, 16]
+
