@@ -39,3 +39,5 @@ Traceback (most recent call last):
     resultado_suma = operator.add(a, b)
                      ^^^^^^^^^^^^
 AttributeError: partially initialized module 'operator' has no attribute 'add' (most likely due to a circular import)"""
+
+"""el problema radicaba en que antes en vez de llamarse operatorEjemplos.py se llamaba operator.py y esto generaba problemas porque en vez de buscar las libreria operator de python, buscaba mi operator.py y entraba en un recorrido circular, es decir se llamaba a si misma y en el codigo se volia a llamar"""
