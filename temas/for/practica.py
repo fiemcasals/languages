@@ -20,6 +20,10 @@ paises = {
     'EU': 'Estados Unidos'
 }
 
+print("\nRecorriendo un diccionario (solo valores):")
+for pais in paises.values():
+    print(pais)
+
 print("\nRecorriendo un diccionario (solo claves):")
 for pais in paises:
     print(pais)

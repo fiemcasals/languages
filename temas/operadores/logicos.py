@@ -1,6 +1,6 @@
 """Operadores Lógicos
 
-Se utilizan para realizar operaciones lógicas"""
+Se utilizan para realizar operaciones lógicas -> TABLAS DE VERDAD"""
 
 x = True
 y = False
